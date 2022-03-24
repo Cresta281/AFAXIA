@@ -1,7 +1,15 @@
 .App {
   text-align: center;
 }
-
+html{
+  background-color: #282c34;
+}
+h1 {
+  background-color: #282c34;
+  margin-top: 2rem;
+  color: white;
+  padding-top: 7rem;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

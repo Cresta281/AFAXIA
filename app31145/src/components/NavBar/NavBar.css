@@ -1,0 +1,10 @@
+.navbar {
+    margin: 0 1rem;
+    padding: 1rem;
+    border-radius: 5%;
+    
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
