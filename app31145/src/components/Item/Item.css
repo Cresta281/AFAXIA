@@ -1,0 +1,13 @@
+.sectionItem {
+    border: 1px solid pink;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.buttonItem {
+    background: black;
+    color: pink;
+    font-size: 1rem;
+    padding: 0.6rem;
+}
