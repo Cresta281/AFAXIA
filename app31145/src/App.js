@@ -2,6 +2,7 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemCount from './components/ItemCount/ItemCount';
+import ItemDetail from './components/ItemDetail/ItemDetail';
 import useState from 'react'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <ItemListContainer greeting={'Bienvenido a mi primer proyecto usando React!'}/>
         <button onClick={() => setShow(!show)}>{(show ? 'Desmontar carrito' : 'Montar carrito')}</button>
         { show ? <ItemCount /> : null}
+        <ItemDetail />
     </div>
   );
 }
