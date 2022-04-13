@@ -11,3 +11,10 @@
     font-size: 1rem;
     padding: 0.6rem;
 }
+.Option {
+    text-decoration: none;
+    color: #475610;
+}
+.Option:hover {
+    color: #475610;
+}

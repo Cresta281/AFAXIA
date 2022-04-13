@@ -1,0 +1,13 @@
+body {
+    background: #F7F5DE; 
+}
+h1 {
+    font-size: 3rem;
+    color: #475610;
+}
+.ImgContainer {
+    border: 1px solid;
+    width: 50%;
+    margin-left: 15rem;
+    margin-top: 5rem;
+}

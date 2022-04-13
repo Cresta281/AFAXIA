@@ -1,20 +1,23 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import ItemCount from './components/ItemCount/ItemCount';
-import ItemDetail from './components/ItemDetail/ItemDetail';
-import useState from 'react'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import Home from './components/Home/Home'
+
 
 function App() {
-  const [show,setShow] = useState(true)
  
   return (
     <div className="App">
+      <BrowserRouter>
         <NavBar />
-        <ItemListContainer greeting={'Bienvenido a mi primer proyecto usando React!'}/>
-        <button onClick={() => setShow(!show)}>{(show ? 'Desmontar carrito' : 'Montar carrito')}</button>
-        { show ? <ItemCount /> : null}
-        <ItemDetail />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/list' element={<ItemListContainer />} />
+          <Route path='/detail/:productId' element={<ItemDetailContainer />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
