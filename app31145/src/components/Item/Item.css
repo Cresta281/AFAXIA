@@ -1,20 +1,33 @@
-.sectionItem {
-    border: 1px solid pink;
-    padding: 1rem;
-    margin: 0.5rem;
-    display: flex;
-    flex-direction: column;
-}
-.buttonItem {
-    background: black;
-    color: pink;
-    font-size: 1rem;
-    padding: 0.6rem;
-}
+
 .Option {
     text-decoration: none;
     color: #475610;
 }
 .Option:hover {
     color: #475610;
+}
+
+.ItemImg {
+    max-width: 100%;
+    border-radius: 10%;
+    height: 200px;
+}
+.Info {
+    background: #F6CBE1;
+    max-width: 40%;
+    position: absolute;
+    left: 25%;
+    font-size: 0.5rem;
+    bottom: -40%;
+}
+.Sectoninfo {
+    position: relative;
+}
+.ItemFooter {
+    background:#F6CBE1;
+    box-shadow: -1px 3px 5px 4px  #F6CBE1;
+    position: absolute;
+    bottom: -50%;
+    left: 25%;
+    font-size: 0.7rem;
 }

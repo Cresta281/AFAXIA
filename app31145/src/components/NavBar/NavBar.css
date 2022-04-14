@@ -6,6 +6,7 @@
     overflow: hidden;
     position: sticky !important;
     top: 0;
+    z-index: 100000000;
     
 }
 .container-fluid {

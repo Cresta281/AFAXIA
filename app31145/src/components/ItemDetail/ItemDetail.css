@@ -1,14 +1,23 @@
 .CardItem {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2rem;
-    border: solid #F6CBE1;
+    margin-top: 5rem;
     width: 50%;
     border-width: 0.5rem;
     border-radius: 10%;
-    margin-left: 15rem;
+    margin-left: 5rem;
     color: #475610;
+    position: relative;
     
+}
+header {
+    border: solid 0.3rem #F6CBE1;
+    border-bottom: none;
+    border-radius: 10%;
+    position: absolute;
+    top: -15%;
+    left: 22%;
+}
+.ItemHeader {
+    font-size: 0.7rem;
 }
 .Info {
     padding: 0.3rem 2rem;

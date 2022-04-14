@@ -14,14 +14,14 @@ const Item = ({id, nombre, img, precio}) => {
             <picture>
                 <img src={img} alt={nombre} className="ItemImg"/>
             </picture>
-            <section>
+            <section className="SectionInfo">
                 <p className="Info">
                     Precio: ${precio}
                 </p>
-            </section>           
-            <footer className='ItemFooter'>
+                <footer className='ItemFooter'>
                 <Link to={`/detail/${id}`} className='Option'>Ver detalle</Link>
-            </footer>
+                </footer>
+            </section>           
         </article>
     )
 }

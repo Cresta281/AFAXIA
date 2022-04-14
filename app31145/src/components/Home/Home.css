@@ -6,8 +6,11 @@ h1 {
     color: #475610;
 }
 .ImgContainer {
-    border: 1px solid;
     width: 50%;
     margin-left: 15rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+img {
+    max-width: 100%;
 }
