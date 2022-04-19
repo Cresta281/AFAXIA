@@ -1,5 +1,5 @@
 import './ItemDetail.css'
-
+import ItemCount from '../ItemCount/ItemCount'
 const ItemDetail = ({id,nombre,precio,categoria,img,descripcion}) => {
 
 
@@ -23,6 +23,7 @@ const ItemDetail = ({id,nombre,precio,categoria,img,descripcion}) => {
                <p className="Info">
                     {descripcion}
                </p>
+               <ItemCount />
            </section>
        </section>
     )
