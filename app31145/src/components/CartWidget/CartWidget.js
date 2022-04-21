@@ -1,11 +1,14 @@
-
+import {useContext} from 'react'
+import CartContext from '../../context/CartContext'
 import './CartWidget.css'
 
-const CartWidget = (props) => {
+const CartWidget = () => {
+    const { getQuantity } = useContext(CartContext)
+    
     return (
         <div className="CartDiv">
             <div className="Cart">
-                <i className="fa-solid fa-cart-shopping">{props.CartNumber}</i>
+                <i className="fa-solid fa-cart-shopping"> { getQuantity() }</i>
             </div>
         </div>
     )

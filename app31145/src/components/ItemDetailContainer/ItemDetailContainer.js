@@ -3,7 +3,7 @@ import { getProductsById } from '../../asynmock'
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
 
-const ItemDetailContainer = () => {
+const ItemDetailContainer = ({setCart,cart}) => {
     const [product, setProduct] = useState()
     const [loading, setLoading] = useState(true)
     
@@ -30,8 +30,7 @@ const ItemDetailContainer = () => {
             { 
                 loading ? 
                     <h1>Cargando...</h1> :
-                product ? 
-                    <ItemDetail  {...product} /> :
+                product ? <ItemDetail  {...product}  setCart={setCart} cart={cart} /> :
                     <h1>El producto no existe</h1> 
             }
         </div>

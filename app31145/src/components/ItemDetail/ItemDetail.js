@@ -1,7 +1,18 @@
 import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
+import {useState,useContext} from 'react'
+import {Link} from 'react-router-dom'
+import CartContext from '../../context/CartContext'
 const ItemDetail = ({id,nombre,precio,categoria,img,descripcion}) => {
 
+    const { addItem, isInCart} = useContext(CartContext)
+
+    const handleAdd = (number) => {
+        const productObj = {
+            id, nombre, precio, cantidad: number
+        }
+        addItem(productObj)
+    }
 
     return (
        <section className="CardItem">
@@ -23,7 +34,7 @@ const ItemDetail = ({id,nombre,precio,categoria,img,descripcion}) => {
                <p className="Info">
                     {descripcion}
                </p>
-               <ItemCount />
+               {isInCart ? <Link to='/cart'>Ir al carrito</Link> : <ItemCount onAdd={handleAdd}/>}
            </section>
        </section>
     )
