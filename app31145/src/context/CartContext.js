@@ -30,7 +30,7 @@ export const CartContextProvider = ({children}) => {
         setCart(products)
    }
    return (
-       <cartContextProvider value={{
+       <CartContextProvider value={{
            cart,
            addItem,
            getQuantity,
@@ -40,8 +40,8 @@ export const CartContextProvider = ({children}) => {
        }}>
            {children}
 
-       </cartContextProvider>
-   )
+       </CartContextProvider>
+    )
 
 }
 
